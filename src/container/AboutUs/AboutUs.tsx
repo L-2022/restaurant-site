@@ -24,11 +24,9 @@ const AboutUs = () => {
               transition={{ duration: 1, ease: easeSmooth }}
           >
             <h1 className="head__text">Our Philosophy</h1>
-            {/*<img src={images.knife} style={{ transform: "rotate(45deg)" }} alt="knife" className="spoon__img" />            */}
               <p className="p__opensans">
               At Biliakyn’s, we treat every ingredient with reverence. Our culinary philosophy blends avant-garde techniques with the soul of home-grown Canadian produce.
             </p>
-            <button type="button" className="custom__button" onClick={() => scrollToSection('menu')}>View Menu</button>
           </motion.div>
           <motion.div
               className="app__aboutus-content_history"
@@ -37,12 +35,10 @@ const AboutUs = () => {
               transition={{ duration: 1, ease: easeSmooth, delay: 0.2 }}
           >
             <h1 className="head__text">The Journey</h1>
-            {/*<img src={images.knife} style={{ transform: "rotate(-45deg) scaleX(-1)" }} alt="knife" className="spoon__img" />            */}
               <p className="p__opensans">
               What started as a private tasting club in 2015 has evolved into Toronto's premier dining destination, where history meets the future on every plate.
             </p>
-            <button type="button" className="custom__button" onClick={() => scrollToSection('awards')}>Our Awards</button>
-          </motion.div>
+            </motion.div>
         </div>
       </div>
   );

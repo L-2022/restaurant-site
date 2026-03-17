@@ -19,7 +19,7 @@
 .app__specialMenu-menu_category,
 .app__specialMenu-menu_selected {
     width: 100%;
-    max-width: 900px;
+    max-width: 1024px;
 }
 
 .app__specialMenu-menu_heading {

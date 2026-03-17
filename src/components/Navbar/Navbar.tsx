@@ -11,6 +11,7 @@ const navLinks = [
   { id: 'about', label: 'About' },
   { id: 'awards', label: 'Awards' },
   { id: 'menu', label: 'Menu' },
+  { id: 'gallery', label: 'Gallery' },
   { id: 'contact', label: 'Contact' },
 ];
 

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useContext, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-import { SubHeading, MenuItem } from '../../components';
+import { MenuItem } from '../../components';
 import data from '../../constants/data';
 import MenuContext from '../../context/MenuContext';
 
@@ -64,7 +64,6 @@ const SpecialMenu = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.9, ease: easeSmooth }}
             >
-                <SubHeading title="Flavours tailored to you" />
                 <h1 className="head__text">Menu</h1>
             </motion.div>
 

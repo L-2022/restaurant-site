@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import "./MenuItem.css";
 
@@ -33,8 +32,6 @@ const MenuItem = ({ title, price, tags, selected, onSelect}: MenuItemProps) => (
           </p>
 
         </div>
-
-        <div className="app__menuitem-dash" />
 
         <div className="app__menuitem-price">
           <p className="p__cormorant">{price}</p>

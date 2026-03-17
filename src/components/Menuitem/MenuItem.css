@@ -48,31 +48,23 @@
 
 /* checkbox */
 .app__menuitem-checkbox {
-    min-width: 16px;
-    min-height: 16px;
+    width: 26px;
+    height: 26px;
     border: 2px solid var(--color-golden);
     border-radius: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 1;
     color: var(--color-golden);
-
-    transition: background 0.2s ease;
+    box-sizing: border-box;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
-/* галочка */
 .app__menuitem-checkbox.checked {
     background: var(--color-golden);
     color: black;
-}
-
-.app__menuitem-dash {
-    width: 90px;
-    height: 1px;
-    background: var(--color-golden);
-    margin: 0 1rem;
 }
 
 .app__menuitem-price {

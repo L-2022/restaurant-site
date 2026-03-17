@@ -1,6 +1,6 @@
 import React from 'react';
 import { AboutUs, Chef, Header, Intro, Awards, SpecialMenu } from './container';
-import { Navbar, FloatingMenuButton, Footer } from './components';
+import { Navbar, Gallery, FloatingMenuButton, Footer } from './components';
 import { MenuProvider } from "./context/MenuContext";
 import './App.css';
 import BookTable from "./container/BookTable/BookTable";
@@ -12,6 +12,7 @@ const App: React.FC = () => (
         <Header />
         <AboutUs />
         <Awards />
+        <Gallery/>
         <SpecialMenu />
         <Chef />
         <Intro />

@@ -1,38 +1,3 @@
 {
-  "nav_home": "Home",
-  "nav_about": "About",
-  "nav_menu": "Menu",
-  "nav_awards": "Awards",
-  "nav_contact": "Contact",
-  "nav_book_table": "Book Table",
-  "hero_title": "Welcome to Our Restaurant",
-  "hero_subtitle": "Experience the Best Dining",
-  "hero_cta": "Reserve a Table",
 
-  "about_title": "About Us",
-  "about_description": "We are passionate about delivering delicious meals with love and care.",
-
-  "menu_title": "Our Menu",
-  "menu_description": "Explore our delicious menu options",
-
-  "special_offers_title": "Special Offers",
-  "special_offers_description": "Check out our chef’s favorite dishes",
-
-  "chef_title": "Meet Our Chef",
-  "chef_description": "Expert in crafting unforgettable flavors",
-
-  "gallery_title": "Gallery",
-
-  "awards_title": "Awards & Recognition",
-
-  "contact_title": "Get in Touch",
-  "contact_address": "Address",
-  "contact_phone": "Phone",
-  "contact_email": "Email",
-
-  "footer_follow_us": "Follow Us",
-  "footer_rights": "All Rights Reserved",
-
-  "mobile_menu_open": "Open Menu",
-  "mobile_menu_close": "Close"
 }

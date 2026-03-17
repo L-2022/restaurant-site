@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
 
-import SubHeading from '../../components/SubHeading/SubHeading';
 import './BookTable.css';
 
 const easeSmooth = [0.65, 0, 0.35, 1] as const;
@@ -21,7 +20,6 @@ const BookTable = () => {
             id='book'
         >
             <div className="app__bookTable-heading">
-                <SubHeading title="Reservations" />
                 <h1 className="head__text">Book A Table</h1>
             </div>
 

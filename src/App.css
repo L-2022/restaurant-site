@@ -1,5 +1,5 @@
 .section__padding {
-  padding: 5rem 6rem;
+  padding: 5rem 2rem;
 }
 
 .flex__center {
@@ -97,31 +97,6 @@
   text-transform: capitalize;
 }
 
-.spoon__img {
-  width: 45px;
-  color: var(--color-golden);
-}
-
-.app__footerOverlay {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-}
-
-.app__footerOverlay-black {
-  height: 25%;
-  background: var(--color-black);
-}
-
-.app__footerOverlay-img {
-  height: 75%;
-}
-
-
 @media screen and (min-width: 2000px) {
   .custom__button,
   .p__cormorant {
@@ -138,11 +113,6 @@
     font-size: 150px;
     line-height: 210px;
   }
-
-  .spoon__img {
-    width: 90px;
-    color: var(--color-golden);
-  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -151,11 +121,11 @@
   }
 
   .app__wrapper_img {
-    margin: 5rem 0 0 0;
+    margin: 4rem 0 0 0;
   }
 
   .app__wrapper_img-reverse {
-    margin: 0 0 5rem 0;
+    margin: 0 0 2rem 0;
   }
 
   .app__wrapper_img img {
@@ -165,13 +135,13 @@
 
 @media screen and (max-width: 850px) {
   .section__padding {
-    padding: 5rem;
+    padding: 5rem 1rem;
   }
 }
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 5rem 1rem;
+    padding: 3rem 0.5rem;
   }
 
   .p__cormorant {

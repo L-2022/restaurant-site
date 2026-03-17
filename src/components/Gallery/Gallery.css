@@ -1,0 +1,186 @@
+/* Main Layout */
+.app__gallery {
+    display: flex;
+    flex-direction: row;
+    background: var(--color-black);
+    padding: 3rem;
+    gap: 5px;
+    transition: all 0.5s ease;
+}
+
+.flex__column {
+    flex-direction: column !important;
+    padding: 4rem 6rem;
+}
+
+/* Content Styles */
+.app__gallery-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery__view-more {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--color-white);
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    margin: 2rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+    align-self: center;
+}
+
+.gallery__view-more::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--color-golden);
+    transition: width 0.3s ease;
+}
+
+.gallery__view-more:hover {
+    color: var(--color-golden);
+}
+
+.gallery__view-more:hover::after {
+    width: 100%;
+}
+
+/* Slider Section */
+.app__gallery-images_container {
+    flex: 1;
+    width: 100%;
+}
+
+.app__gallery-images {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+
+.app__gallery-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.app__gallery-slots_container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Card Styles */
+.app__gallery-images_card {
+    position: relative;
+    min-width: calc(50% - 10px);
+    height: 450px;
+    transition: 0.5s ease;
+}
+
+.app__gallery-images_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*opacity: 0.5;*/
+    transition: 0.5s ease;
+}
+
+.app__gallery-images_card:hover img {
+    opacity: 1;
+}
+
+.app__gallery-images_card:hover {
+    opacity: 1;
+}
+
+/* Navigation */
+.app__gallery-images_arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    pointer-events: none;
+    height: 100%;
+}
+
+.gallery__arrow-icon {
+    color: var(--color-white);
+    font-size: 2rem;
+    cursor: pointer;
+    /*background: rgba(190, 190, 190, 0.17);*/
+    border-radius: 7px;
+    pointer-events: auto;
+    height: 50%;
+}
+
+.gallery__arrow-icon:hover {
+    color: var(--color-golden);
+    background: rgba(140, 138, 138, 0.34);
+}
+
+/* Grid Mode Styles */
+.app__gallery-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+.app__gallery-grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.app__gallery-grid_container .app__gallery-images_card {
+    min-width: auto;
+    height: 350px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1150px) {
+    .app__gallery {
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+    .flex__column {
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__gallery-images_card {
+        min-width: 100%;
+    }
+
+    .app__gallery-content {
+        align-items: flex-start;
+    }
+    .app__gallery-slots_container {
+        gap: 0;
+    }
+    .app__gallery-grid_container {
+        grid-template-columns: 1fr;
+        /*grid-template-columns: 2fr;*/
+    }
+}

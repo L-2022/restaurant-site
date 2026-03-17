@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { scrollToSection } from '../../utils/scrollToSection';
-import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import './Header.css';
 
