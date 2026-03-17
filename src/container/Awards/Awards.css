@@ -1,0 +1,120 @@
+.app__laurels_awards {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.app__laurels_awards-card {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 230px;
+}
+
+.app__laurels_awards-card_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-right: 0.5rem;
+    min-width: 100px;
+}
+
+.app__laurels_awards-card_icon svg {
+    z-index: 1;
+    font-size: 70px;
+}
+
+.app__laurels_awards-card_icon span {
+    position: absolute;
+    top: 35%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-white);
+    font-family: var(--font-base);
+}
+
+.app__laurels_awards-card_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.app__wrapper_img {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.app__wrapper_img video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+}
+
+.app__wrapper_img:hover .app__video-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.app__video-overlay_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.45);
+    border: 2px solid var(--color-golden);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.app__video-overlay_circle:hover {
+    background: rgba(0, 0, 0, 0.65);
+    transform: scale(1.08);
+}
+
+.app__wrapper_img.playing .app__video-overlay {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease 0.3s;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__laurels_awards-card_icon svg {
+        font-size: 90px;
+    }
+
+    .app__laurels_awards-card_icon span {
+        font-size: 40px;
+    }
+
+    .app__laurels_awards-card {
+        margin: 2rem 0;
+    }
+
+    .app__video-overlay_circle {
+        width: 150px;
+        height: 150px;
+    }
+}

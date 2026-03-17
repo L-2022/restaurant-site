@@ -1,0 +1,124 @@
+.app__aboutus {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.app__aboutus-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.aboutus_overlay-letter {
+    font-family: var(--font-base);
+    color: var(--color-grey);
+    font-size: clamp(150px, 40vw, 300px);
+    opacity: 0.3;
+    user-select: none;
+}
+
+/* --- Content Layout --- */
+
+.app__aboutus-content {
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.app__aboutus-content_about,
+.app__aboutus-content_history {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.app__aboutus-content_about p,
+.app__aboutus-content_history p {
+    margin: 1.5rem 0;
+    color: var(--color-grey);
+    max-width: 450px;
+}
+
+.app__aboutus-content_about .custom__button,
+.app__aboutus-content_history .custom__button {
+    align-self: center;
+}
+
+/* --- Tablet (768px) --- */
+
+@media screen and (min-width: 768px) {
+    .app__aboutus-content {
+        gap: 6rem;
+    }
+
+    .aboutus_overlay-letter {
+        font-size: 350px;
+    }
+
+    .app__aboutus-content_about p,
+    .app__aboutus-content_history p {
+        max-width: 550px;
+    }
+}
+
+/* --- Desktop (900px+) --- */
+
+@media screen and (min-width: 900px) {
+    .app__aboutus-content {
+        flex-direction: row;
+        gap: 8rem;
+    }
+
+    .app__aboutus-content_about {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .app__aboutus-content_history {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .aboutus_overlay-letter {
+        font-size: 450px;
+    }
+}
+
+/* --- Extra Large Screens --- */
+
+@media screen and (min-width: 2000px) {
+    .app__aboutus-content {
+        gap: 12rem;
+    }
+
+    .aboutus_overlay-letter {
+        font-size: 650px;
+    }
+
+    .app__aboutus-content_about p,
+    .app__aboutus-content_history p {
+        margin: 3rem 0;
+        font-size: 24px;
+        max-width: 700px;
+    }
+}
+
+/* --- Small Devices --- */
+
+@media screen and (max-width: 450px) {
+    .app__aboutus-content {
+        gap: 3rem;
+    }
+
+    .aboutus_overlay-letter {
+        font-size: 180px;
+    }
+}

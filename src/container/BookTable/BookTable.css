@@ -1,0 +1,100 @@
+.app__bookTable {
+    padding: 2rem 2rem;
+    background: var(--color-black);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.app__bookTable-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.app__bookTable-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.app__bookTable-form_group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.app__bookTable-form input,
+.app__bookTable-form textarea {
+    width: 100%;
+    border: 1px solid var(--color-golden);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-base);
+    color: var(--color-white);
+    padding: 0.75rem 1rem;
+    background: transparent;
+    outline: none;
+}
+
+.app__bookTable-form textarea {
+    resize: none;
+}
+
+.app__bookTable-form input:focus,
+.app__bookTable-form textarea:focus {
+    border-color: var(--color-white);
+}
+
+.app__bookTable-form_button {
+    margin-top: 1rem;
+}
+
+/* --- Tablet & Desktop (768px+) --- */
+@media screen and (min-width: 768px) {
+    .app__bookTable {
+        padding: 4rem;
+    }
+
+    .app__bookTable-form_group {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* --- Extra Large (2000px+) --- */
+@media screen and (min-width: 2000px) {
+    .app__bookTable {
+        max-width: 1200px;
+    }
+
+    .app__bookTable-form input,
+    .app__bookTable-form textarea {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+}
+
+/* --- Small Mobile --- */
+@media screen and (max-width: 450px) {
+    .app__bookTable {
+        border: none;
+        padding: 2rem 1rem;
+    }
+
+    .app__bookTable-heading h1 {
+        font-size: 45px;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px var(--color-black) inset !important;
+    -webkit-text-fill-color: var(--color-white) !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--color-black) inset !important;
+    -webkit-text-fill-color: var(--color-white) !important;
+}

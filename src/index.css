@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+  background-color: var(--color-black);
+  width: 100%;
+  max-width: 100vw;
+  scroll-behavior: auto;
+}
+
+/* Don't force scroll container on html — let browser handle vertical scroll naturally to avoid first-swipe "stuck" (scroll chaining). */
+#root {
+  background-color: var(--color-black);
+  /*overflow-x: hidden;*/
+  /*max-width: 100%;*/
+  /*min-height: 100vh;*/
+}
+
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+
+  --color-golden: #DAC165FF;
+  --color-black: #000000;
+  --color-gray: #464141;
+  --color-crimson: rgba(227, 204, 231, 0.96);
+  --color-grey: #AAAAAA;
+  --color-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
