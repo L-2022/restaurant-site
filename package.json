@@ -15,9 +15,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "tsc --noEmit",
-    "test": "vitest run --passWithNoTests",
-    "test:watch": "vitest"
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": {
     "production": [
