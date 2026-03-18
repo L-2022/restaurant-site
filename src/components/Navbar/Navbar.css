@@ -72,13 +72,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: var(--color-black);
     transition: .5s ease;
 
     flex-direction: column;
-    z-index: 5;
+    z-index: 100;
 }
 
 .app__navbar-smallscreen_overlay .overlay__close {
