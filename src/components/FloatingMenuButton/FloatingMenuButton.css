@@ -1,22 +1,16 @@
 .floating_menu_button {
     position: fixed;
     left: 20px;
-    bottom: 20px;
-
-    padding: 12px 20px;
-
+    bottom: 30px;
+    padding: 15px 20px;
     background: var(--color-golden);
-    color: #000;
-
+    color: var(--color-black);
+    font-family: var(--font-alt);
     border: none;
     border-radius: 30px;
-
     cursor: pointer;
-
     font-weight: 600;
-
     z-index: 1000;
-
     transition: transform 0.2s ease;
 }
 

@@ -10,8 +10,10 @@ const navEase = [0.25, 0.46, 0.45, 0.94] as const;
 const navLinks = [
   { id: 'about', label: 'About' },
   { id: 'awards', label: 'Awards' },
-  { id: 'menu', label: 'Menu' },
   { id: 'gallery', label: 'Gallery' },
+  { id: 'menu', label: 'Menu' },
+  { id: 'book', label: 'Book Table' },
+
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -43,10 +45,6 @@ const Navbar = () => {
               </li>
           ))}
         </ul>
-
-        <div className="app__navbar-book nav__pointer">
-          <b className="p__opensans" onClick={() => handleNavClick('book')}>Book Table</b>
-        </div>
 
         <div className="app__navbar-smallscreen nav__pointer">
           <GiForkKnifeSpoon

@@ -1,13 +1,18 @@
+/* =====  Main Container ===== */
 .app__specialMenu {
     width: 100%;
     background: var(--color-black);
 }
 
+
+/* =====  Title ===== */
 .app__specialMenu-title {
     margin-bottom: 2rem;
     text-align: center;
 }
 
+
+/* ===== Wrapper ===== */
 .app__specialMenu-menu {
     width: 100%;
     margin: 2rem 0;
@@ -16,24 +21,30 @@
     align-items: center;
 }
 
+
+/* ===== Categories / Selected Items ===== */
 .app__specialMenu-menu_category,
 .app__specialMenu-menu_selected {
     width: 100%;
     max-width: 1024px;
 }
 
+
+/* =====  Category Heading ===== */
 .app__specialMenu-menu_heading {
-    font-family: var(--font-base);
+    color: var(--color-white);
+    font-family: var(--font-alt);
     font-weight: 600;
     font-size: 45px;
-    line-height: 58.5px;
+    line-height: 58px;
     letter-spacing: 0.04em;
-    color: var(--color-white);
     cursor: pointer;
     text-align: center;
     margin-bottom: 1rem;
 }
 
+
+/* ===== Items (Accordion Body) ===== */
 .app__specialMenu_menu_items {
     display: flex;
     flex-direction: column;
@@ -45,16 +56,16 @@
     transform-origin: top;
 }
 
+
+/* ===== Items Open State ===== */
 .app__specialMenu_menu_items.open {
     max-height: 2000px;
     transform: scaleY(1);
     padding: 1rem 20px;
 }
 
-.app__specialMenu-menu_selected {
-    padding-top: 40px;
-}
 
+/* =====  Responsive (Mobile) ===== */
 @media screen and (max-width: 650px) {
     .app__specialMenu-menu_heading {
         font-size: 35px;

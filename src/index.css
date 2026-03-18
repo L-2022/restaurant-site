@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');*/
+/* --- Fonts Import --- */
+/*@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');*/
 
 html,
 body {
@@ -8,17 +10,13 @@ body {
   scroll-behavior: auto;
 }
 
-/* Don't force scroll container on html — let browser handle vertical scroll naturally to avoid first-swipe "stuck" (scroll chaining). */
 #root {
   background-color: var(--color-black);
-  /*overflow-x: hidden;*/
-  /*max-width: 100%;*/
-  /*min-height: 100vh;*/
 }
 
 :root {
-  --font-base: 'Cormorant Upright', serif;
-  --font-alt: 'Open Sans', sans-serif;
+  --font-base: 'Dancing Script', cursive;
+  --font-alt: 'Montserrat', sans-serif;
 
   --color-golden: #DAC165FF;
   --color-black: #000000;

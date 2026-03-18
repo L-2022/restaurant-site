@@ -51,10 +51,10 @@ const Gallery = () => {
                 transition={{ duration: 1, ease: easeSmooth }}
             >
                 <h1 className="headtext__cormorant head__text">Gallery</h1>
-                <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>
+                <p className="p__opensans" >
                     Explore our restaurant's atmosphere and delicious dishes through our curated gallery.
                 </p>
-                <button type="button" className="gallery__view-more" onClick={toggleGallery}>
+                <button type="button" className="p__opensans gallery__view-more" onClick={toggleGallery}>
                     {showFullGallery ? 'View Less' : 'View More'}
                 </button>
             </motion.div>

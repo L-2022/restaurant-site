@@ -43,7 +43,7 @@
 .app__aboutus-content_about p,
 .app__aboutus-content_history p {
     margin: 1.5rem 0;
-    color: var(--color-grey);
+    color: var(--color-white);
     max-width: 450px;
 }
 

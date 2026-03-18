@@ -80,7 +80,7 @@ const SpecialMenu = () => {
                             transition={{ duration: 0.8, ease: easeSmooth }}
                         >
                             <p
-                                className="app__specialMenu-menu_heading"
+                                className="app__specialMenu-menu_heading view-more"
                                 onClick={() => toggleCategory(category)}
                             >
                                 {displayName.charAt(0).toUpperCase() + displayName.slice(1)}
@@ -110,13 +110,13 @@ const SpecialMenu = () => {
                     transition={{ duration: 0.8, ease: easeSmooth }}
                 >
                     <p
-                        className="app__specialMenu-menu_heading"
+                        className="app__specialMenu-menu_heading view-more view-more__golden"
                         onClick={() => toggleCategory('selected')}
                     >
                         Selected {selectedItems.length > 0 && `(${selectedItems.length})`}
                     </p>
 
-                    <div className={`app__specialMenu_menu_items ${openCategories.selected ? 'open' : ''}`}>
+                    <div className={`app__specialMenu_menu_items ${openCategories.selected ? 'open ' : ''}`}>
                         {selectedItems.length === 0 ? (
                             <p className="p__opensans" style={{ textAlign: 'center', opacity: 0.5 }}>
                                 No items selected yet.

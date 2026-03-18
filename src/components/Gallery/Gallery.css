@@ -1,7 +1,7 @@
 /* Main Layout */
 .app__gallery {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: var(--color-black);
     padding: 3rem;
     gap: 5px;
